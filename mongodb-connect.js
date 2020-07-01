@@ -49,17 +49,17 @@ MongoClient.connect('mongodb://localhost:27017', (err, client) => {
     // });
 
     //delete
-    // db.collection('FED2006FirstMongo').deleteOne({
-    //     taskName: 'Learning MongoDB'
-    // }, (result) => {
-    //     console.log(result);
-    // })
+    db.collection('FED2006FirstMongo').deleteOne({
+        taskName: 'Learning MongoDB'
+    }, (result) => {
+        console.log(result);
+    })
 
-    // db.collection('FED2006FirstMongo').deleteMany({
-    //     taskName: 'Task1'
-    // }).then((result) => {
-    //     console.log(result);
-    // });
+    db.collection('FED2006FirstMongo').deleteMany({
+        taskName: 'Task1'
+    }).then((result) => {
+        console.log(result);
+    });
 
     //read - needs work
     // console.log(db.collection('FED2006FirstMongo').find());
